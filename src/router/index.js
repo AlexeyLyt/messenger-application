@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from '../App.vue'
+import vContactList from '../components/contacts/v-contact-list'
 
 Vue.use(VueRouter)
 
@@ -8,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'contacts',
-    component: App
+    component: vContactList
   }
 ]
 
