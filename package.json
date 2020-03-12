@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "json-server --watch db.json & npm run serve",
+    "db": "json-server --watch db.json",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
+    "json-server": "^0.16.1",
     "material-design-icons-iconfont": "^5.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
@@ -47,13 +48,15 @@
       "parser": "babel-eslint"
     },
     "rules": {
+      "no-trailing-spaces": "off",
       "no-console": "off",
       "no-unused-vars": "off",
       "indent": "off",
       "eol-last": "off",
       "space-before-function-paren": "off",
       "quotes": "off",
-      "vue/no-unused-components": "off"
+      "vue/no-unused-components": "off",
+      "quote-props": "off"
     }
   },
   "browserslist": [
